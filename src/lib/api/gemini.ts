@@ -5,7 +5,7 @@ if (!GROQ_API_KEY) {
   console.error('VITE_GROQ_API_KEY tidak terisi di .env')
 }
 
-const VISION_MODEL = 'qwen/qwen3.6-27b'
+const VISION_MODEL = 'qwen/qwen3.8-27b'
 const TEXT_MODEL = 'llama-3.3-70b-versatile'
 
 async function groqChat(model: string, messages: any[], json = false) {
