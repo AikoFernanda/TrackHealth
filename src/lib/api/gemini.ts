@@ -6,7 +6,7 @@ if (!GROQ_API_KEY) {
 }
 
 const VISION_MODEL = 'qwen/qwen3.8-27b'
-const TEXT_MODEL = 'llama-3.3-70b-versatile'
+const TEXT_MODEL = 'openai/gpt-oss-20b'
 
 async function groqChat(model: string, messages: any[], json = false) {
   const res = await fetch(`${GROQ_BASE}/chat/completions`, {
